@@ -1,0 +1,152 @@
+nav{
+    height: 80px;
+    width: 100%;
+
+    font-family: 'Raleway', sans-serif;
+    /* box-shadow: 2px 2px 2px 2px gray; */
+    box-shadow:  14px 14px 15px #9b9b9b,
+    -14px -14px 15px #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav a{
+    text-decoration: none;
+    color:black;
+    padding-right: 15px;
+}
+
+#logo_x{
+    height: 40px;
+    padding-left: 10px;
+}
+
+#home{
+    height: 600px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+#home p{
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Play', sans-serif;
+    font-size: 22px;
+}
+
+#home1{
+    height: 300px;
+    width: 50%;
+}
+
+#home2{
+    height: 450px;
+    width: 50%;
+}
+
+#home h2{
+    font-family: 'Play', sans-serif;
+    font-size: 40px;
+    text-shadow: rgb(145, 142, 142) 0.05em 0.05em;
+}
+
+
+#home img{
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.redes_sociales{
+    font-size: 30px;
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 350px;
+    position: relative;
+    margin: 8px;
+
+    border-radius: 48px;
+    background: #f7f7f7;
+    box-shadow:  21px 21px 42px #e1e1e1,
+                 -21px -21px 42px #ffffff;
+}
+
+
+
+.grid-container{
+    height: 800px;
+    display: grid;
+    
+    grid-template-columns: auto auto;
+    /* column-gap: 35px; */
+    /* row-gap: 15px; */
+    grid-gap: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container{
+    text-align: center;
+}
+
+.camara{
+    height: 200px;
+    width: 220px;
+    /* padding-bottom: 4%; */
+    background-image: url("../images/camera.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.moto{
+    height: 200px;
+    width: 220px;
+    background-image: url("../images/Moto.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.lab{
+    height: 200px;
+    width: 220px;
+    background-image: url("../images/lab.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.moon{
+    height: 200px;
+    width: 220px;
+    background-image: url("../images/casa.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#Hobby{
+    padding-top: 30px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: rgb(145, 142, 142) 0.1em 0.1em;
+
+}
