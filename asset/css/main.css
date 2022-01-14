@@ -22,6 +22,10 @@ body::-webkit-scrollbar-thumb{
 }
 
 
+/* body{
+    background-color:#c7c7c7;;
+} */
+
 /* Barra de navegación */
 
 nav{
@@ -102,11 +106,12 @@ nav a{
     width: 350px;
     position: relative;
     margin: 8px;
+    margin-top: 60px;
 
     border-radius: 48px;
-    background: #f1f1f1;
-    box-shadow:  21px 21px 42px #c7c7c7,
-                 -21px -21px 42px #ffffff;
+    background: #ffffff;
+    box-shadow:  8px 8px 8px #00000028,
+                 -8px -8px 42px #00000028;
 }
 
 
@@ -194,7 +199,7 @@ nav a{
 /* Timeline */
 
 .timeline-section{
-    background-color: #24292d;
+    background-color: #ffffff;
     min-height: 100vh;
     padding: 100px 15px;
 }
@@ -247,26 +252,27 @@ nav a{
 
 .timeline-date{
     font-size: 16px;
-    color: #f1f1f1;
+    color: black;
     margin: 6px 0 15px;
 }
 
 .timeline-content{
-    background-color: #2f363e;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 7px;
+    box-shadow: 4px 2px 15px 0.5px rgba(0, 0, 0, 0.288)
 }
 
 .timeline-content h3{
     font-size: 20px;
-    color: #c7c7c7;
+    color: black;
     margin: 0 0 10px;
     text-transform: capitalize;
     font-weight: 500;
 }
 
 .timeline-content p{
-    color: #c8c8c8;
+    color: black;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
