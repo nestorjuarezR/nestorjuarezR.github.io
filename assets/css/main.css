@@ -6,8 +6,7 @@
   align-items: center;
   font-family: "Poppins", sans-serif;
   color: #f1f1ff83;
-  padding: 0;
-  margin: 0;
+  padding-top: 20px;
   text-align: center;
 }
 .presentation h3 {
@@ -16,6 +15,7 @@
 }
 .presentation p {
   font-size: 20px;
+  margin-top: 0px;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 .home-box {
-  height: 80vmin;
+  height: 80vh;
   width: auto;
   position: relative;
   padding: 10px;
@@ -49,16 +49,16 @@ body {
 }
 
 .redes_sociales {
+  height: 80px;
+  width: 350px;
   font-size: 30px;
   display: inline-flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 80px;
-  width: 350px;
   position: relative;
   margin: 8px;
-  margin-top: 10px;
+  margin-top: 60px;
   border-radius: 48px;
   background: rgba(0, 0, 0, 0.1);
   border: solid rgba(0, 0, 0, 0.05);
@@ -69,8 +69,9 @@ body {
   color: #f1f1ff83;
 }
 
-@media (min-width: 360px) and (max-width: 720px) {
+@media (min-width: 360px) and (max-width: 1024px) {
   .home-box {
+    height: 90vh;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -87,16 +88,17 @@ body {
     color: #f1f1ff83;
   }
   .presentation h3 {
-    font-size: 30px;
+    font-size: 23px;
   }
   .presentation p {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
   }
   .presentation .redes_sociales {
     width: 80%;
-    font-size: 25px;
-    bottom: 15px;
+    height: 50px;
+    font-size: 20px;
+    bottom: 30px;
   }
 }
 
