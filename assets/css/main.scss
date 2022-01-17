@@ -50,6 +50,10 @@ body{
                  -8px -8px 42px #00000028;
 }
 
+.fab {
+    color: $text-color;
+  }
+
 // Responsive
 
 @media (min-width: 360px) and (max-width: 720px) {
@@ -67,6 +71,7 @@ body{
     .presentation{
         height: 50%;
         width: auto;
+        color: #f1f1ff83;
         
         h3{
             font-size: 30px;
