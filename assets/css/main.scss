@@ -1,42 +1,54 @@
 @import './_variables';
 @import './_nesting.scss';
 
-body{   
+
+body{
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    height: 100%;
     box-sizing: border-box;
-    background: #200122;  /* fallback for old browsers */
+    background: #200122;
     background: linear-gradient(to left, #6f0000, #200122);
-    
 }
 
-.home-box{
-    height: 80vh;
-    // height: 80vmin;
-    width: auto;
-    position: relative;
+.home-section{
+    height: auto;
     padding: 10px;
     margin: 4%;
-    border-radius: 15px;
     background-color: rgba( 255, 255, 255, 0.1);
+    border-radius: 7px;
+    box-shadow: 4px 2px 15px 0.5px rgba(0, 0, 0, 0.288);
+
+}
+
+.principal{
+    // background-color: bisque;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
-.principal-image{
-    background-image: url('../images/nes.png');
-    background-position: center;
-    background-size: 90%;
-    background-repeat: no-repeat;
+.image-principal{
+    // background-color: coral;
+    height: 50%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.redes_sociales{
-    height: 80px;
-    width: 350px;
+.nes{
+    width: 50%;
+    height: 50%;
+}
 
-    font-size: 30px;
+.redes-sociales{
+    height: 60px;
+    width: 300px;
+
+    font-size: 24px;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-around;
@@ -44,7 +56,7 @@ body{
 
     position: relative;
     margin: 8px;
-    margin-top: 60px;
+    // margin-top: 60px;
 
     border-radius: 48px;
     background: rgba( 0, 0, 0, 0.1);
@@ -57,41 +69,165 @@ body{
     color: $text-color;
   }
 
+/* Timeline */
+.division-estudios{
+    height: 50px;
+    width: 15%;
+    margin: 0 auto;
 
-// Responsive
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-family: $text-principal;
+    color: $text-color;
+    border-radius: 10px;
+    left: 50px;
+    background-color: rgba( 255, 255, 255, 0.1);
+    box-shadow: 4px 2px 15px 0.5px rgba(0, 0, 0, 0.288);
+}
+
+.timeline-items{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #f1f1f1a4;
+    left: calc(50% - 3px);
+}
+
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot{
+    height: 16px;
+    width: 16px;
+    background-color: #f39d08;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date{
+    font-size: 16px;
+    color: $text-color;
+    margin: 6px 0 15px;
+    font-weight: 500;
+    font-family: $text_principal;
+}
+
+.timeline-content{
+    width: 85%;
+    background-color: rgba( 255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 4px 2px 15px 0.5px rgba(0, 0, 0, 0.288);
+    font-family: $text_principal;
+}
+
+.timeline-content h3{
+    font-size: 20px;
+    color: $text-color;
+    margin: 0 0 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.timeline-content p{
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+
+
+
+// Responsive 
 
 @media (min-width: 360px) and (max-width: 1024px) {
-    .home-box{
-        height: 90vh;
+    .principal{
         display: flex;
-        flex-direction:column-reverse;
-    }
-
-    .principal-image{
-        height: 50%;
+        flex-flow: column-reverse wrap;
         width: auto;
-        background-size: 80%;
     }
 
     .presentation{
-        height: 50%;
         width: auto;
-        color: #f1f1ff83;
         
         h3{
-            font-size: 23px;
+            font-size: 20px;
         }
 
         p{
-            font-size: 15px;
+            font-size: 18px;
             text-align: center;
         }
+    }
 
-        .redes_sociales{
-            width: 80%;
-            height: 50px;
-            font-size: 20px;
-            bottom: 30px
-        }
+    .image-principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .redes-sociales{
+        width: 80%;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    // Timeline
+
+    .division-estudios{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 -1px;
+    }
+
+    .timeline-content{
+        width: auto;
+    }
+    .timeline-items::before{
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left: 0;
     }
 }
