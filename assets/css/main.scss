@@ -15,6 +15,7 @@ body{
     height: auto;
     padding: 10px;
     margin: 4%;
+    box-sizing: border-box;
     background-color: rgba( 255, 255, 255, 0.1);
     border-radius: 7px;
     box-shadow: 4px 2px 15px 0.5px rgba(0, 0, 0, 0.288);
@@ -28,6 +29,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 .image-principal{
@@ -61,8 +63,10 @@ body{
     border-radius: 48px;
     background: rgba( 0, 0, 0, 0.1);
     border: solid rgba(0, 0, 0, 0.05);
-    box-shadow:  8px 8px 8px #0000005e,
-                 -8px -8px 42px #00000028;
+    // box-shadow:  8px 8px 8px #0000005e,
+    //              -8px -8px 42px #00000028;
+    box-shadow: 8px 8px 8px 0 rgba(0,0,0,0.2),
+                8px 8px 3px 0 rgba(0,0,0,0.19);
 }
 
 .fab {
@@ -79,17 +83,27 @@ body{
 
 button{
     cursor: pointer;
-    border-radius: 7px;
+    border-radius: 12px;
     background: rgba( 0, 0, 0, 0.1);
-    background-color: rgba( 255, 255, 255, 0.1);
-    border: solid rgba(0, 0, 0, 0.05);
-    box-shadow:  8px 8px 8px #0000005e,
-                 -8px -8px 42px #00000028;
+    border: solid rgba(0, 0, 0, 0.07);
+    box-shadow: 8px 8px 8px 0 rgba(0,0,0,0.2),
+                 8px 8px 3px 0 rgba(0,0,0,0.19);
+
     
     font-family: $text-principal;
     color: $text-color;
     font-size: 16px;
     margin-left: 10px;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+button:active{
+    box-shadow: 0 5px rgba(0,0,0,0.19);
+    transform: translateY(4px)
 }
 
 /* Timeline */
@@ -189,7 +203,30 @@ button{
     line-height: 22px;
 }
 
+//Skils
 
+.skills-section{
+    color: #ddd;
+    margin: 40px 5px;
+}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
 
 
 // Responsive 
@@ -199,10 +236,14 @@ button{
         display: flex;
         flex-flow: column-reverse wrap;
         width: auto;
+        height: auto;
     }
+
+
 
     .presentation{
         width: auto;
+
         
         h3{
             font-size: 20px;
@@ -215,6 +256,7 @@ button{
     }
 
     .image-principal{
+        flex-grow: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -226,6 +268,8 @@ button{
         height: 50px;
         font-size: 20px;
     }
+
+
 
     // Timeline
 
