@@ -43,7 +43,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 .image-principal {
@@ -77,6 +77,27 @@ body {
 
 .fab {
   color: #fff1fed7;
+}
+
+.section-botones {
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 8px 8px #0000005e, -8px -8px 42px #00000028;
+  font-family: "Poppins", sans-serif;
+  color: #fff1fed7;
+  font-size: 16px;
+  margin-left: 10px;
 }
 
 /* Timeline */
