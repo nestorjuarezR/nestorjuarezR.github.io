@@ -206,54 +206,77 @@ button:active {
   line-height: 22px;
 }
 
-.skills-section {
-  color: #ddd;
-  margin: 40px 5px;
+.inner {
+  padding-top: 20px;
 }
 
-/* Container for skill bars */
+.header {
+  text-align: center;
+  color: #fff1fed7;
+  padding: 1rem;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #2ecc71;
+}
+
 .container {
-  width: 100%;
-  /* Full width */
-  background-color: #ddd;
-  /* Grey background */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.skills {
-  text-align: right;
-  /* Right-align text */
-  padding-top: 10px;
-  /* Add top padding */
-  padding-bottom: 10px;
-  /* Add bottom padding */
-  color: white;
-  /* White text color */
+.skill-box {
+  padding: 1rem;
+  cursor: pointer;
 }
 
-.html {
-  width: 90%;
-  background-color: #04AA6D;
+.skill-title {
+  color: #fff1fed7;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
 }
 
-/* Green */
-.css {
-  width: 80%;
-  background-color: #2196F3;
+.skill-icon {
+  transition: 0.4s;
+  font-size: 35px;
 }
 
-/* Blue */
-.js {
-  width: 65%;
-  background-color: #f44336;
+#html {
+  color: #F16529;
 }
 
-/* Red */
-.php {
-  width: 60%;
-  background-color: #808080;
+#css {
+  color: dodgerblue;
 }
 
-/* Dark Grey */
+#sass {
+  color: #cc5de8;
+}
+
+#javascript {
+  color: #fd7e14;
+}
+
+.skill-box:hover .skill-icon {
+  transform: translateY(-7px);
+}
+
 @media (min-width: 360px) and (max-width: 1024px) {
   .principal {
     display: flex;
