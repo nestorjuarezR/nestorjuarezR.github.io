@@ -206,6 +206,10 @@ button:active {
   line-height: 22px;
 }
 
+.skills-section {
+  margin-bottom: 80px;
+}
+
 .inner {
   padding-top: 20px;
 }
@@ -239,6 +243,16 @@ button:active {
 .skill-box {
   padding: 1rem;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skill-box p {
+  text-align: center;
+  color: #fff1fed7;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .skill-title {
@@ -257,6 +271,10 @@ button:active {
   font-size: 35px;
 }
 
+#python {
+  color: darkgrey;
+}
+
 #html {
   color: #F16529;
 }
@@ -271,6 +289,10 @@ button:active {
 
 #javascript {
   color: #fd7e14;
+}
+
+#linux {
+  color: black;
 }
 
 .skill-box:hover .skill-icon {
