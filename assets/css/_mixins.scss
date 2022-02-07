@@ -1,0 +1,24 @@
+@mixin div (){
+    width: 250px;
+    height: auto;
+    
+    padding: 1rem;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.skill-box{
+    @include div();
+    
+  p{
+    text-align: center;  
+    color: $text-color;
+    font-size: 15px;
+    font-family: $text_principal;
+    font-weight: 400;
+  }
+}

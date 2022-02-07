@@ -1,5 +1,6 @@
 @import "./_variables";
 @import "./_nesting.scss";
+@import "./mixins.scss";
 
 body {
   margin: 0;
@@ -7,7 +8,9 @@ body {
   height: 100%;
   box-sizing: border-box;
   background: #200122;
-  background: linear-gradient(to left, #6f0000, #200122);
+  // background: linear-gradient(to left, #6f0000, #200122);
+  background: linear-gradient(to left, #000000, #403f3f)
+  
 }
 
 .home-section {
@@ -42,6 +45,8 @@ body {
 .nes {
   width: 50%;
   height: 50%;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
 .redes-sociales {
@@ -119,7 +124,9 @@ button:active {
   border-radius: 10px;
   left: 50px;
   background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 4px 2px 15px 0.5px rgba(0, 0, 0, 0.288);
+  // box-shadow: 4px 2px 15px 0.5px rgba(0, 0, 0, 0.288);
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2),
+    8px 8px 3px 0 rgba(0, 0, 0, 0.19)
 }
 
 .timeline-items {
@@ -174,6 +181,7 @@ button:active {
   margin: 6px 0 15px;
   font-weight: 500;
   font-family: $text_principal;
+  padding-top: 20px;
 }
 
 .timeline-content {
@@ -181,7 +189,9 @@ button:active {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 7px;
-  box-shadow: 4px 2px 15px 0.5px rgba(0, 0, 0, 0.288);
+  // box-shadow: 4px 2px 15px 0.5px rgba(0, 0, 0, 0.288);
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2),
+    8px 8px 3px 0 rgba(0, 0, 0, 0.19);
   font-family: $text_principal;
 }
 
@@ -200,7 +210,7 @@ button:active {
   line-height: 22px;
 }
 
-//Skils
+// Skills
 
 .skills-section{
     margin-bottom: 80px;
@@ -211,6 +221,7 @@ button:active {
   padding-top: 20px;
 }
 .header {
+  // padding-bottom: 35px;
   text-align: center;
   color: $text-color;
   padding: 1rem;
@@ -230,29 +241,13 @@ button:active {
 }
 
 .container {
+  padding-top: 40px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
-.skill-box{
-  padding: 1rem;
-  cursor: pointer;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-
-  p{
-    text-align: center;  
-    color: $text-color;
-    font-size: 15px;
-    font-family: $text_principal;
-    font-weight: 400;
-  }
-}
 
 .skill-title{
     color: $text-color;
