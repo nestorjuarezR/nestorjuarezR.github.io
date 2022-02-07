@@ -44,7 +44,7 @@ body {
 
 .nes {
   width: 50%;
-  height: 50%;
+  height: 100%;
   border-radius: 15px;
   object-fit: cover;
 }
@@ -314,6 +314,14 @@ button:active {
       font-size: 18px;
       text-align: center;
     }
+  }
+  
+  .nes{
+    width: 85%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-top: 15px;
   }
 
   .image-principal {
