@@ -23,6 +23,52 @@ body {
   box-shadow: 4px 2px 15px 0.5px rgba(0, 0, 0, 0.288);
 }
 
+// Menu desplegable
+
+
+  /* Dropdown Button */
+.boton-menu{
+  pointer-events: none;
+}
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+}
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+
+}
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+#menu-icon{
+  color: #ddd;
+  font-size: 25px;
+}
+
+
 .principal {
   // background-color: bisque;
   display: flex;
@@ -43,14 +89,14 @@ body {
 }
 
 .nes {
-  width: 50%;
-  height: 100%;
+  width: 65%;
+  height: 50%;
   border-radius: 15px;
   object-fit: cover;
 }
 
 .redes-sociales {
-  height: 60px;
+  height: 45px;
   width: 300px;
 
   font-size: 24px;
@@ -84,7 +130,10 @@ body {
   align-items: center;
 }
 
-button {
+#botones-inicio{
+  width: auto;
+  height: 40px;
+
   cursor: pointer;
   border-radius: 12px;
   background: rgba(0, 0, 0, 0.1);
@@ -98,6 +147,21 @@ button {
   margin-left: 10px;
   transition-duration: 0.4s;
 }
+
+// button {
+//   cursor: pointer;
+//   border-radius: 12px;
+//   background: rgba(0, 0, 0, 0.1);
+//   border: solid rgba(0, 0, 0, 0.07);
+//   box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2),
+//     8px 8px 3px 0 rgba(0, 0, 0, 0.19);
+
+//   font-family: $text_principal;
+//   color: $text-color;
+//   font-size: 16px;
+//   margin-left: 10px;
+//   transition-duration: 0.4s;
+// }
 
 button:hover {
   background-color: rgba(0, 0, 0, 0.3);
@@ -295,7 +359,16 @@ button:active {
 
 // Responsive
 
-@media (min-width: 360px) and (max-width: 1024px) {
+@media (min-width: 360px) and (max-height: 695px){
+  .nes{
+    width: 65%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+@media (min-width: 360px) and (max-width: 1024px){
   .principal {
     display: flex;
     flex-flow: column-reverse wrap;
@@ -317,7 +390,7 @@ button:active {
   }
   
   .nes{
-    width: 85%;
+    width: 65%;
     height: 100%;
     object-fit: cover;
     border-radius: 50px;
@@ -334,9 +407,16 @@ button:active {
 
   .redes-sociales {
     width: 80%;
-    height: 50px;
+    height: 45px;
     font-size: 20px;
   }
+
+  // Menu desplegable
+  .dropdown:active .dropdown-content {
+    display: block;
+    pointer-events: all;
+  }
+
 
   // Timeline
 
