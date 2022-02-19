@@ -155,7 +155,7 @@ body {
   align-items: center;
 }
 
-#botones-inicio {
+#boton-sobre_mi, #boton-contacto {
   width: auto;
   height: 40px;
   cursor: pointer;
