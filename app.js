@@ -13,3 +13,13 @@ function enDesarrollo(){
     var text = 'Página en desarrollo \nÚltima actualización: 18/Feb/2022'
     alert(text)
 }
+
+window.addEventListener("mousedown", function(event) {
+    if(event.button == 0){
+        console.log('Click Izquierdo');
+    } else if (event.button == 1){
+        console.log('Boton de enmedio');
+    } else if (event.button == 2){
+        console.log('Click Derecho');
+    }
+})
