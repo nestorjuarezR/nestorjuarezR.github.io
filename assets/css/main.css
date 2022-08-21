@@ -155,7 +155,8 @@ body {
   align-items: center;
 }
 
-#boton-sobre_mi, #boton-contacto {
+#boton-sobre_mi,
+#boton-contacto {
   width: auto;
   height: 40px;
   cursor: pointer;
@@ -177,6 +178,46 @@ button:hover {
 button:active {
   box-shadow: 0 5px rgba(0, 0, 0, 0.19);
   transform: translateY(4px);
+}
+
+.proyect_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.proyect_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 30px;
+  margin-left: 10px;
+  height: 400px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 8px 8px 3px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: #fff1fed7;
+}
+
+.proyect-image {
+  width: 240px;
+  display: flex;
+  justify-content: center;
+}
+
+.boton-link {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 /* Timeline */

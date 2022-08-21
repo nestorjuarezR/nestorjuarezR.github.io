@@ -10,7 +10,7 @@ function callButton(){
 }
 
 function enDesarrollo(){
-    var text = 'Página en desarrollo \nÚltima actualización: 18/Feb/2022'
+    var text = 'Página en desarrollo \nÚltima actualización: 21/Ago/2022'
     alert(text)
 }
 
