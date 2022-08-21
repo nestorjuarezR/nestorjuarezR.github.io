@@ -472,6 +472,15 @@ button:active {
   }
 
 
+  //Proyecto
+
+  .proyect_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
   // Timeline
 
   .division-estudios {
